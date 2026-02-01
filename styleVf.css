@@ -1,0 +1,585 @@
+/* Officiel */
+body {
+    margin: 0;
+}
+
+body h1, body h2, body h3, body h4, body p {
+    margin: 0;
+}
+body a {
+    text-decoration: none;
+}
+
+header {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to right, #A923BE, #2457D8);
+}
+
+main h1, main h2 {
+    font-family: "Playfair Display", serif;
+}
+main p, main h3 {
+    font-family: "Roboto", sans-serif;
+}
+
+header nav img {
+    height: 80px;
+    width: 80px;
+}
+
+header nav ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: center;
+    align-items: center;
+    gap: 120px;
+    padding: 0;
+}
+
+header a {
+    font-family: "Roboto", sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+footer {
+    background: linear-gradient(to right, #A923BE, #2457D8);
+    display: flex;
+    justify-content: space-between;
+    
+    align-items: start;
+    padding: 40px 50px;
+    max-width: 100%;
+}
+
+footer #logo {
+    height: 116px;
+    width: 116px;
+    margin-top: 20px;
+}
+
+footer a, footer p, footer h4 {
+    color: white;
+    font-family: "Roboto", sans-serif;
+}
+
+footer a {
+    font-size: 16px;
+}
+
+footer h4 {
+    font-size: 20px;
+}
+
+footer .reseaux img {
+    height: 60px;
+    width: 60px;
+}
+
+footer .contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+}
+
+footer ul {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+}
+
+footer .formations {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+footer .reseaux {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-gap: 20px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+ 
+.section1 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
+    padding: 85px;
+}
+ 
+.carousel {
+    position: relative;
+
+    width: 500px;
+    height: 500px; 
+    overflow: hidden;
+    background-color: white;
+    border-radius: 40px;
+    border-width: 3px;
+    border-style: solid;
+    border-color: rgba(169, 35, 190, 1);
+}
+ 
+ 
+.carousel-item {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    transition: opacity 800ms ease-in-out;
+}
+ 
+.carousel-item.active {
+    opacity: 1;
+    z-index: 1;
+}
+ 
+.section1 .resume {
+    margin: 0;
+    padding: 0 100px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+}
+
+.resume h1 {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Playfair Display", serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    padding-bottom: 23px;
+    background: linear-gradient(90deg, rgba(36, 87, 216, 1), rgba(169, 35, 190, 1));
+    background-clip: text;
+    color: transparent;
+}
+
+.resume p {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    font-size: 20px;
+    margin-bottom: 30px;
+    padding: 0;
+}
+ 
+.resume a {
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: bold;
+    font-style: normal;
+    font-variation-settings:
+    "wdth" 100;
+    color: white;
+    background-color: rgba(186, 85, 195, 1);
+    padding: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.resume a:hover {
+    background: #2457D8;
+}
+
+.section2 {
+  display: grid;
+  /* On définit une seule zone qui prend toute la place */
+  grid-template-areas: "stack"; 
+  height: 100vh;
+  overflow: hidden;
+}
+
+.section2 .video-bg, .section2 .content {
+  /* Les deux éléments vont dans la même zone "stack" */
+  grid-area: stack; 
+}
+
+.sectoin2 .video-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section2 .content {
+  /* On centre le texte par-dessus la vidéo */
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  color: white;
+  z-index: 1; /* Pour être sûr que le texte soit au-dessus */
+  padding: 125px 65px;
+  gap: 50px;
+  width: 40%;
+}
+
+.section2 h2 {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.section2 p {
+    font-family: "Playfaire Display", serif;
+    font-size: 32px;
+    font-style: italic;
+}
+
+.section3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.section3 h2 {
+    background: linear-gradient(to right,#2457d8bb, #a923bec9);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 55px;
+    font-weight: bold;
+    font-style: italic;
+    margin: 35px 0;
+}
+
+.section3 .photos {
+    background: linear-gradient(#2457d8bb, #a923bec9);
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+
+
+.section4 {
+    display: flex;
+    flex-direction: column;
+    padding: 125px 65px 75px 65px;
+    gap: 35px;
+    max-width: 100%;
+}
+
+.section4 .Apropos {
+    display: flex;
+    gap: 120px;
+}
+
+.section4 .Apropos h3 {
+    font-size: 30px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.section4 .Apropos .content {
+    font-size: 20px;
+    font-weight: bold;
+    font-style: italic;
+    border: solid;
+    border-color: #BA55C3;
+    border-width: 5px;
+    border-radius: 10px;
+    padding: 20px 100px 20px 20px;
+}
+
+.section4 .Apropos .content p span {
+    display: block;
+    margin-bottom: 12px;
+}
+.section4 .Apropos img {
+    height: 260px;
+    width: 475px;
+    margin-left: 30px;
+}
+.section4 .Apropos .etudiant, .section4 .Apropos .intervenant {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.section4 .icone {
+    display: flex;
+    justify-content: space-around;
+}
+
+.section5 {
+    background-image: url(./media/Fresque.png);
+    background-size: 100% 100%;
+    display: flex;
+    padding: 150px 150px 150px 300px;
+}
+
+.section5 form {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", sans-serif;
+    color: white;
+    background-image: linear-gradient(#580065a2, #001d678f);
+    padding: 20px 100px 40px 40px;
+    gap: 20px;
+}
+
+.section5 form h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.section5 form .inscription select {
+    margin-left: 30px;
+}
+
+
+.section5 form .information p {
+    margin-bottom: 20px;
+}
+
+.section5 form .inscription {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.section5 form .identite {
+    display: flex;
+    flex-direction: column;
+    margin-left: 30px;
+    gap: 14px;
+    margin-bottom: 20px;
+}
+
+.section5 form p {
+    font-size: 22px;
+}
+.section5 form label, .section5 form button, .section5 form select {
+    font-size: 18px;
+}
+
+.section5 form input, .section5 form select {
+    width: 400px;
+    height: 30px;
+}
+
+.section5 form button {
+    margin-left: 30px;
+    margin-top: 10px;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border: 0;
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    background-color: #BA55C3;
+    color: white;
+    cursor: pointer;
+}
+
+.section5 form button:hover {
+    background: #2457D8;
+}
+
+
+/* Responsive 1440px */
+
+@media screen and (max-width: 1440px) {
+    .section1 .resume{
+        padding: 50px;
+    }
+
+    .section5 {
+        padding: 100px 100px 100px 200px;;
+    }
+}
+
+
+/* Responsive tablette */
+
+@media screen and (max-width: 1024px) {
+
+    header nav ul {
+        gap: 70px;
+    }
+
+    .section1 {
+        gap: 40px;
+        padding: 40px;
+    }
+    .section1 .carousel {
+        margin: 0;
+        width: 40%;
+    }
+    .section1 .resume {
+        padding: 0;
+        width: 60%;
+    }
+
+    .section3 .photos img {
+        height: 380px;
+        width: 300px;
+    }
+    .section3 .photos {
+        gap: 0;
+        justify-content: space-around;
+    }
+
+    .section4 {
+        padding: 125px 50px 75px 50px;
+    }
+    .section4 .Apropos {
+        max-width: 100%;
+        gap: 40px;
+    }
+    .section4 .Apropos .etudiant, .section4 .Apropos .intervenant {
+        gap: 20px;
+    }
+    .section4 .Apropos .content {
+        padding-right: 60px;
+    }
+    .section4 .Apropos img {
+        height: 220px;
+        width: 415px;
+    }
+
+    .section5 {
+        padding: 100px 0;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header nav ul {
+        gap: 40px;
+    }
+
+    header nav ul a {
+        font-size: 15px;
+    }
+
+    .section1 {
+        flex-direction: column;
+    }
+
+    .section1 .carousel {
+        height: 350px;
+        width: 350px;
+        padding: 0;
+    }
+
+    .section1 .resume {
+        width: 100%;
+    }
+
+    .section2 {
+        height: auto;
+    }
+    .section2 video {
+        width: 100%;
+    }
+
+    .section2 .content {
+        gap: 10px;
+        padding: 30px 80px 30px 20px;
+        width: 100%;
+    }
+
+    .section2 .content h2 {
+        font-size: 30px;
+    }
+
+    .section3 {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section3 h2 {
+        text-align: center;
+    }
+
+    .section3 .photos {
+        width: 100%;
+    }
+
+    .section3 .photos img {
+        width: 200px;
+        height: 300px;
+    }
+
+    .section4 {
+        padding: 50px;
+    }
+    .section4 img {
+        display: none;
+    }
+
+    .section4 .Apropos{
+        flex-direction: column;
+    }
+
+    footer {
+        padding: 30px;
+    }
+
+    footer h4 {
+        font-size: 16px;
+    }
+
+    footer a, footer p {
+        font-size: 12px;
+    }
+
+    footer #logo {
+        height: 80px;
+        width: 80px;
+    }
+    footer .reseaux {
+        grid-gap: 10px;
+    }
+    footer .reseaux img {
+        height: 40px;
+        width: 40px;
+    }
+}
+
+
+@media screen and (max-width: 390px) {
+    .section3 .photos img {
+        width: 100px;
+        height: 200px;
+    }
+
+    .section5 form h3 {
+        font-size: 20px;
+    }
+
+    .section5 form {
+        width: 100%;
+    }
+
+    .section5 form input, .section5 form select {
+    width: 100%;
+    height: 30px;
+}
+}

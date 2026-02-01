@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cantarell:ital,wght@0,400;0,700;1,400;1,700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Radley:ital@0;1&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>My Digital Week</title>
+    <link rel="stylesheet" href="./styleVf.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="https://www.mydigitalschool.com/toutes-les-ecoles" target="_blank">Nos Campus</a>
+                </li>
+                <li>
+                    <a href="https://www.mydigitalschool.com/annecy/formations"target="_blank">Nos Formations</a>
+                </li>
+                <img src="./media/logo.png" alt="Logo My Digitall Week">
+                <li>
+                    <a href="#">Espace Entreprise</a>
+                </li>
+                <li>
+                    <a href="https://www.mydigitalschool.com/realiser-sa-formation-web-alternance" target="_blank">Alternance</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="section1">
+            <div class="carousel">
+                <div class="carousel-inner" id="carouselTrack">
+                    <img src="./media/Property 1=Carrousel1.png" class="carousel-item active" alt="Image 1">
+                    <img src="./media/Property 1=Carrousel2.png" class="carousel-item" alt="Image 2">
+                    <img src="./media/Property 1=Carrousel3.png" class="carousel-item" alt="Image 3">
+                    <img src="./media/Property 1=Carrousel4.png" class="carousel-item" alt="Image 4">
+                    <img src="./media/Property 1=Carrousel5.png" class="carousel-item" alt="Image 5">
+                    <img src="./media/Property 1=Carrousel6.png" class="carousel-item" alt="Image 6">
+                    <img src="./media/Property 1=Carrousel7.png" class="carousel-item" alt="Image 7">
+                </div>
+               
+                <script>
+                    const images = document.querySelectorAll(".carousel-item");
+                    let currentIndex = 0;
+ 
+                    setInterval(() => {
+                        images[currentIndex].classList.remove("active");
+                        currentIndex = (currentIndex + 1) % images.length;
+                        images[currentIndex].classList.add("active");
+                    }, 4000);
+                </script>
+            </div>
+
+            <div class="resume">
+                <h1>My Digital Week</h1>
+                <p>
+                    La MyDigitalWeek est un événement dédié à l’innovation et aux métiers du digital. Pendant une semaine, les étudiants de MyDigitalSchool Annecy travaillent sur des projets concrets, participent à des ateliers collaboratifs et relèvent des défis inspirés du monde professionnel.
+                    Cet événement met en valeur les talents du numérique de demain et l’approche pédagogique de l’école, basée sur la pratique et l’expérience.
+                </p>
+                <a href="#section5">
+                    Accéder au formulaire
+                </a>
+            </div>
+        </section>
+
+
+        <section class="section2">
+            <video autoplay muted loop playsinline class="video-bg">
+                <source src="./media/Séquence 02.mp4" type="video/mp4">
+            </video>
+  
+            <div class="content">
+                <h2>Des entreprises qui innovent, créent et façonnent l’avenir. </h2>
+                <p>Là où les idées deviennent des réussites.</p>
+            </div>
+            <!-- <video src="./media/Séquence 02.mp4" autoplay loop></video> -->
+        </section>
+
+
+        <section class="section3">
+            <h2>Le futur du digital commence ici</h2>
+            <div class="photos">
+                <img src="./media/appareil photo.png" alt="Appareil photo du studio Aravision">
+                <img src="./media/pure illusion.png" alt="Affichage dans l'agence Pure Illusion">
+                <img src="./media/Aravision.png" alt="Studio podcast Aravision">
+            </div>
+        </section>
+
+
+        <section class="section4">
+            <div class="Apropos">
+                <div class="etudiant">
+                    <h3>Pour nos futurs étudiants...</h3>
+                    <div class="content">
+                        <p><span>C’est l’occasion de comprendre concrètement les métiers du digital, d’échanger avec des professionnels, de poser des questions librement.</span>
+                            My Digital Week privilégie le partage d’expérience, la pratique et le réel. Ici, on apprend au contact du terrain, des parcours vrais et des défis du quotidien.</p>
+                    </div>
+                    <img src="./media/Pure illusion conference.png" alt="Conference chez Pure Illusion">
+                </div>
+                <div class="intervenant">
+                    <img src="./media/image etudiant.png" alt="Salle avec des étudiants">
+                    <h3>Pour nos futurs intervenants...</h3>
+                    <div class="content">
+                        <p><span>My Digital Week permet de transmettre son savoir-faire, de valoriser son métier et de contribuer à la formation des talents de demain, avec un engagement simple et flexible.</span>
+                            My Digital Week est un espace de rencontres, d’inspiration et d’opportunités entre étudiants et entrepreneurs, autour du digital et de l’innovation.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="icone">
+                <img src="./media/Question.png" alt="">
+                <img src="./media/ping.svg" alt="">
+                <img src="./media/calendrier.svg" alt="">
+                <img src="./media/telephone.svg" alt="">
+            </div>
+        </section>
+
+
+        <section class="section5" id="section5">
+            <form>
+                <div class="inscription">
+                    <h3>INSCRIVEZ-VOUS</h3>
+                    <label for="campus">Quel campus vous intéresse ?</label>
+                    <select name="campus" id="campus">
+                        <option value="annecy">Annecy</option>
+                        <option value="grenoble">Grenoble</option>
+                        <option value="grenoble">Angers</option>
+                        <option value="grenoble">Bordeaux</option>
+                        <option value="grenoble">Caen</option>
+                        <option value="grenoble">Lille</option>
+                        <option value="grenoble">Lyon</option>
+                        <option value="grenoble">Melun</option>
+                        <option value="grenoble">Montpellier</option>
+                        <option value="grenoble">Nancy</option>
+                        <option value="grenoble">Nantes</option>
+                        <option value="grenoble">Nice</option>
+                        <option value="grenoble">Paris</option>
+                        <option value="grenoble">Rennes</option>
+                        <option value="grenoble">St-Quentin-en-Yvelines</option>
+                        <option value="grenoble">Toulouse</option>
+                        <option value="grenoble">Vannes</option>
+                    </select>
+                </div>
+                <div class="information">
+                    <p>VOS INFORMATIONS</p>
+                    <div class="identite">
+                        <label for="name">Nom de l'entreprise :</label>
+                        <input type="text" id="name" name="name">
+                        <label for="adress">Adresse :</label>
+                        <input type="text" name="adress" id="adress">
+                        <label for="email">E-mail :</label>
+                        <input type="email" name="email" id="email">
+                        <label for="telephone">Téléphone :</label>
+                        <input type="number" name="telephone" id="telephone">
+                    </div>
+                    <button type="submit">ENVOYER</button>
+                </div>
+            </form>
+
+        </section>
+    </main>
+    <footer>
+        <img id="logo" src="./media/logo.png" alt="Logo My Digital Week">
+        <div class="formations">
+            <h4>Formations</h4>
+            <ul>
+                <li>
+                    <a href="https://www.mydigitalschool.com/annecy/bachelor-informatique" target="_blank">Développement</a>
+                </li>
+                <li>
+                    <a href="https://www.mydigitalschool.com/annecy/bachelor-digital-design" target="_blank">Web Design</a>
+                </li>
+                <li>
+                    <a href="https://www.mydigitalschool.com/annecy/bachelor-marketing-digital" target="_blank">Marketing</a>
+                </li>
+                <li>
+                    <a href="https://www.mydigitalschool.com/annecy/bachelor-webmarketing-social-media" target="_blank">Communication</a>
+                </li>
+            </ul>
+        </div>
+        <div class="aide">
+            <h4>Besoin d'aide</h4>
+            <ul>
+                <li>
+                    <a href="https://www.mydigitalschool.com/decouvre-les-formations-mydigitalschool" target="_blank">FAQ</a>
+                </li>
+                <li>
+                    <a href="#">Articles récents</a>
+                </li>
+            </ul>
+        </div>
+        <div class="contact">
+            <h4>Contactez-nous</h4>
+            <p>Adresse:14 Av. du Rhône, 74000 Annecy</p>
+            <p>Téléphone: 04 58 02 02 69</p>
+            <p>E-Mail: mydw@my-digital-school.org</p>                      
+        </div>
+        <div class="reseaux">
+            <a href="https://www.instagram.com/mydigitalschool/?hl=fr" target="_blank">
+                <img src="./media/insta.svg" alt="icone instagram">
+            </a>
+            <a href="https://fr.linkedin.com/school/mydigitalschool/" target="_blank">
+                <img src="./media/linkedin.svg" alt="icone linkdin">
+            </a>
+            <a href="https://www.tiktok.com/@mydigitalschool?lang=fr" target="_blank">
+                <img src="./media/tiktok.svg" alt="icone tiktok">
+            </a>
+            <a href="https://www.facebook.com/my.digital.schoolFR/?locale=fr_FR" target="_blank">
+                <img src="./media/facebook.svg" alt="icone facebook">
+            </a>
+            
+        </div>
+    </footer>
+</body>
+</html>
